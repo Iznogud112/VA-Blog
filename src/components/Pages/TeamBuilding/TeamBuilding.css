@@ -1,0 +1,23 @@
+.teamImg {
+  border-radius: 10px;
+  width: 119.1rem;
+}
+
+.teamHr {
+  width: 90%;
+}
+
+.teamText {
+  padding-bottom: 2rem;
+  width: 60%;
+  padding-left: 2rem;
+  color: aliceblue;
+}
+
+.teamTitle {
+  padding-top: 1rem;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 60%;
+  color: lightgray;
+}

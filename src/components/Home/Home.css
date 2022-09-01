@@ -1,0 +1,86 @@
+.title {
+  padding: 10rem;
+  text-align: center;
+  background-image: url("/src/assets/images/VA.jpg");
+  background-size: cover;
+  height: 67rem;
+  width: auto;
+  background-repeat: no-repeat;
+  color: lightgrey;
+  margin-top: 6rem;
+}
+
+.saradnici {
+  padding-top: 2rem;
+  background-color: #333;
+  color: lightgray;
+}
+
+.saradnici p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
+
+.homeImg {
+  border-radius: 10px;
+  width: 400px;
+  float: left;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.5rem;
+  background-color: #aaa;
+  align-items: baseline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.clients {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
+  margin-left: 1rem;
+  width: fit-content;
+}
+
+.clients:hover {
+  border-color: transparent;
+  background: transparent;
+}
+
+.client_article {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) =================== */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+/* =================== MEDIA QUERIES (SMALL DEVICES) =================== */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .logo {
+  }
+
+  .title {
+    background-size: contain;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}

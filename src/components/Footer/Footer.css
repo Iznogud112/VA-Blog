@@ -1,0 +1,40 @@
+.footer {
+  color: lightgray;
+  padding: 1rem 0 1rem 1rem;
+  gap: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footerContact {
+  width: 50%;
+  float: left;
+}
+
+.mapPlace {
+  padding-top: 3rem;
+  padding-left: 8rem;
+}
+
+/* .info {
+  float: left;
+  padding: 0.5em;
+  color: #fff;
+  font-size: 0.9em;
+  font-style: italic;
+} */
+
+hr {
+  max-width: 90%;
+  margin: auto;
+}
+
+.map {
+  background-color: lightgray;
+  width: 650px;
+  height: 450px;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+  margin-bottom: 1rem;
+}

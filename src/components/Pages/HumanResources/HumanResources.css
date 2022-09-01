@@ -1,0 +1,23 @@
+.hrImg {
+  border-radius: 10px;
+  width: 119.1rem;
+}
+
+.hrHr {
+  width: 90%;
+}
+
+.hrText {
+  padding-bottom: 2rem;
+  width: 60%;
+  padding-left: 2rem;
+  color: aliceblue;
+}
+
+.hrTitle {
+  padding-top: 1rem;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 60%;
+  color: lightgray;
+}

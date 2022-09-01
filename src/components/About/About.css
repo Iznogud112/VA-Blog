@@ -1,0 +1,31 @@
+.aboutImg {
+  border-radius: 10px;
+  width: 119.1rem;
+  margin-top: 6rem;
+}
+
+.about {
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.aboutHr {
+  width: 90%;
+}
+
+.aboutName {
+  text-align: center;
+  color: lightgray;
+  padding-bottom: 1rem;
+}
+
+.aboutText {
+  color: aliceblue;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+}

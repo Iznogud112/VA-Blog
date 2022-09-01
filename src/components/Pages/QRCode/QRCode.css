@@ -1,0 +1,23 @@
+.codeImg {
+  border-radius: 10px;
+  width: 119.1rem;
+}
+
+.codeHr {
+  width: 90%;
+}
+
+.codeText {
+  padding-bottom: 2rem;
+  width: 60%;
+  padding-left: 2rem;
+  color: aliceblue;
+}
+
+.codeTitle {
+  padding-top: 1rem;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 60%;
+  color: lightgray;
+}

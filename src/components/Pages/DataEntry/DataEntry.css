@@ -1,0 +1,23 @@
+.dataImg {
+  border-radius: 10px;
+  width: 119.1rem;
+}
+
+.dataHr {
+  width: 90%;
+}
+
+.dataText {
+  padding-bottom: 2rem;
+  width: 60%;
+  padding-left: 2rem;
+  color: aliceblue;
+}
+
+.dataTitle {
+  padding-top: 1rem;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 60%;
+  color: lightgray;
+}
