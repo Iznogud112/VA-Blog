@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./QRCode.css";
 
@@ -31,7 +30,7 @@ function QRCode() {
 
   return (
     <React.Fragment>
-      <img className="codeImg" src={img} alt="" />
+      <h1 className="title">QR CODE</h1>
       <div>
         {qrcode.map((q) => (
           <div key={q.title}>
@@ -40,7 +39,7 @@ function QRCode() {
           </div>
         ))}
       </div>
-      <hr className="codeHr" />
+      <hr />
     </React.Fragment>
   );
 }

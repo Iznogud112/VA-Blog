@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./EventsOrganization.css";
 
@@ -31,7 +30,7 @@ function EventsOrganization() {
 
   return (
     <React.Fragment>
-      <img className="eventImg" src={img} alt="" />
+      <h1 className="title">ORGANIZACIJA DOGAĐAJA</h1>
       <div>
         {events.map((e) => (
           <div key={e.title}>
@@ -40,7 +39,7 @@ function EventsOrganization() {
           </div>
         ))}
       </div>
-      <hr className="eventHr" />
+      <hr />
     </React.Fragment>
   );
 }

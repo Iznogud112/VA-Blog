@@ -1,9 +1,9 @@
 import React from "react";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+//import { Pagination } from "swiper";
+//import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/pagination";
+//import "swiper/css";
+//import "swiper/css/pagination";
 
 import "./Home.css";
 import IMG1 from "../../assets/images/img1.jpg";
@@ -47,14 +47,14 @@ function Home() {
           return (
             <article key={id} className="clients">
               <div className="client_article">
-                <img className="homeImg" src={image} />
+                <img className="homeImg" src={image} alt="" />
               </div>
             </article>
           );
         })}
       </div>
       <div className="saradnici">
-        <p className="text">POSLUJ PAMETNO A NE NAPORNO</p>
+        <p className="text">Posluj pametno a ne naporno</p>
         <hr />
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./SocialMedia.css";
 
@@ -31,7 +30,7 @@ function SocialMedia() {
 
   return (
     <React.Fragment>
-      <img className="smImg" src={img} alt="" />
+      <h1 className="title">DRUŠTVENE MREŽE</h1>
       <div>
         {social.map((s) => (
           <div key={s.title}>
@@ -40,7 +39,7 @@ function SocialMedia() {
           </div>
         ))}
       </div>
-      <hr className="smHr" />
+      <hr />
     </React.Fragment>
   );
 }

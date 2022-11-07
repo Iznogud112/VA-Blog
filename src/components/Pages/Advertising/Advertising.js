@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./Advertising.css";
 
@@ -31,7 +30,7 @@ function Advertising() {
 
   return (
     <React.Fragment>
-      <img className="advImg" src={img} alt="" />
+      <h1 className="title">OGRAŠAVANJE</h1>
       <div>
         {advertising.map((a) => (
           <div key={a.title}>
@@ -40,7 +39,7 @@ function Advertising() {
           </div>
         ))}
       </div>
-      <hr className="advHr" />
+      <hr />
     </React.Fragment>
   );
 }

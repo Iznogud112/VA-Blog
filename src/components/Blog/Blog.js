@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../assets/images/VA.jpg";
 
 import "./Blog.css";
 
@@ -40,19 +39,19 @@ function Blog() {
 
   return (
     <React.Fragment>
-      {/* <img className="blogImg" src={img} alt="" /> */}
       <div>
+        <h1 className="titleBlog">VA Blog</h1>
         <div className="blog">
           {blog.map((b) => (
             <div key={b.node.title}>
-              <img className="blogImages" src={b.node.coverImage.url} />
+              <img className="blogImages" src={b.node.coverImage.url} alt="" />
               <h1 className="blogTitle">{b.node.title}</h1>
               <p className="blogContent">{b.node.content.text}</p>
             </div>
           ))}
         </div>
       </div>
-      <hr className="blogHr" />
+      <hr />
     </React.Fragment>
   );
 }

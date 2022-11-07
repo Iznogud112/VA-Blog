@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./HumanResources.css";
 
@@ -31,7 +30,7 @@ function HumanResources() {
 
   return (
     <React.Fragment>
-      <img className="hrImg" src={img} alt="" />
+      <h1 className="title">LJUDSKI RESURSI</h1>
       <div>
         {hr.map((h) => (
           <div key={h.title}>
@@ -40,7 +39,7 @@ function HumanResources() {
           </div>
         ))}
       </div>
-      <hr className="hrHr" />
+      <hr />
     </React.Fragment>
   );
 }

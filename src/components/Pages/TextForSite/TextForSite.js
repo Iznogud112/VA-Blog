@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./TextForSite.css";
 
@@ -31,7 +30,7 @@ function TextForSite() {
 
   return (
     <React.Fragment>
-      <img className="textImg" src={img} alt="" />
+      <h1 className="title">TEKSTOVI ZA SAJTOVE</h1>
       <div>
         {text.map((t) => (
           <div key={t.title}>
@@ -40,7 +39,7 @@ function TextForSite() {
           </div>
         ))}
       </div>
-      <hr className="textHr" />
+      <hr />
     </React.Fragment>
   );
 }

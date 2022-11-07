@@ -1,11 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Blog from "./components/Blog/Blog";
-import Contact from "./components/Contact/Contact";
+
 import DataEntry from "./components/Pages/DataEntry/DataEntry";
 import TextForSite from "./components/Pages/TextForSite/TextForSite";
 import QRCode from "./components/Pages/QRCode/QRCode";
@@ -14,8 +15,9 @@ import SocialMedia from "./components/Pages/SocialMedia/SocialMedia";
 import HumanResources from "./components/Pages/HumanResources/HumanResources";
 import BiznisIdeas from "./components/Pages/BusinessIdeas/BusinessIdeas";
 import EventsOrganization from "./components/Pages/EventsOrganization/EventsOrganization";
-import "./App.css";
 import TeamBuilding from "./components/Pages/TeamBuilding/TeamBuilding";
+
+import "./App.css";
 
 function App() {
   return (

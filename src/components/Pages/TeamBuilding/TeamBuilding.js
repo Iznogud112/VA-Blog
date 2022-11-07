@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import img from "../../../assets/images/VA.jpg";
 
 import "./TeamBuilding.css";
 
@@ -31,7 +30,7 @@ function TeamBuilding() {
 
   return (
     <React.Fragment>
-      <img className="teamImg" src={img} alt="" />
+      <h1 className="title">TEAM BUILDING</h1>
       <div>
         {social.map((t) => (
           <div key={t.title}>
@@ -40,7 +39,7 @@ function TeamBuilding() {
           </div>
         ))}
       </div>
-      <hr className="teamHr" />
+      <hr />
     </React.Fragment>
   );
 }

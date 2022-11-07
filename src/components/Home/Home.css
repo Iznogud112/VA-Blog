@@ -1,15 +1,3 @@
-.title {
-  padding: 10rem;
-  text-align: center;
-  background-image: url("/src/assets/images/VA.jpg");
-  background-size: cover;
-  height: 67rem;
-  width: auto;
-  background-repeat: no-repeat;
-  color: lightgrey;
-  margin-top: 6rem;
-}
-
 .saradnici {
   padding-top: 2rem;
   background-color: #333;
@@ -25,9 +13,9 @@
 }
 
 .homeImg {
-  border-radius: 10px;
   width: 400px;
   float: left;
+  border-radius: 10px;
 }
 
 .images {
@@ -38,14 +26,13 @@
   align-items: baseline;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 7rem;
 }
 
 .clients {
   padding: 1rem;
   border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: all 400ms ease;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   width: fit-content;
 }
 
@@ -60,23 +47,63 @@
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) =================== */
-@media screen and (max-width: 1024px) {
-  header {
-    height: 68vh;
+@media screen and (max-width: 1400px) {
+  .images {
+    gap: 0.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .homeImg {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .homeImg {
+    width: 340px;
+  }
+
+  .title {
+    padding: 2rem;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, auto);
+    padding-left: 0.5rem;
   }
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) =================== */
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-
-  .logo {
-  }
-
   .title {
-    background-size: contain;
+    padding: 4rem;
+    height: 16rem;
+  }
+
+  .saradnici {
+    padding-top: 1rem;
+  }
+
+  .saradnici p {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-top: 3px;
+    font-size: 18px;
+  }
+
+  .homeImg {
+    width: 295px;
+  }
+
+  .clients {
+    padding: 0;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem;
+    padding-left: 2.2rem;
   }
 
   .header__socials,

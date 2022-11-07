@@ -31,7 +31,6 @@ function Contact() {
     <div className="contact">
       <h2>Contact Me</h2>
       <div className="container contact__container">
-        <div className="contact__options"></div>
         <form ref={form} onSubmit={sendEmail}>
           <input
             className="form-control"

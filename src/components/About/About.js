@@ -1,25 +1,6 @@
 import React, { useState, useEffect } from "react";
-import img from "../../assets/images/VA.jpg";
 
 import "./About.css";
-
-/* const ABOUT_QUERY = `
-  {
-    postsConnection {
-      edges{
-        node{
-          author {
-            biography
-            id
-            name
-            picture {
-              url
-          }
-        }
-  }
-        }
-      }
-}`; */
 
 const ABOUT_QUERY = ` {
   authors {
@@ -45,13 +26,13 @@ function About() {
       }
     )
       .then((response) => response.json())
-      //.then((data) => setAbout(data.data.postsConnection.edges));
       .then((data) => setAbout(data.data.authors));
   }, []);
 
   return (
     <React.Fragment>
-      <img className="aboutImg" src={img} alt="" />
+      {/* <img className="aboutImg" src={img} alt="" /> */}
+      <h1 className="title">KO SMO MI</h1>
       <div className="about">
         {about.map((a) => (
           <div key={a.id}>
@@ -60,7 +41,7 @@ function About() {
           </div>
         ))}
       </div>
-      <hr className="aboutHr" />
+      <hr />
     </React.Fragment>
   );
 }
