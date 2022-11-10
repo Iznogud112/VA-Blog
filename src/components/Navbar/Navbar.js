@@ -193,7 +193,9 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src={logo} alt="Logo" className="titleLogo" />
+            <NavLink to="/" onClick={closeMobileMenu}>
+              <img src={logo} alt="Logo" className="titleLogo" />
+            </NavLink>
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
@@ -214,15 +216,13 @@ function NavBar() {
               className="nav-item"
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
+              onClick={() => setDropDown(!dropDown)}
             >
-              <button
-                className="nav-dropdown"
-                onClick={() => setDropDown(!dropDown) && closeMobileMenu}
-              >
-                IZABERI USLUGU
+              <button className="nav-dropdown">
+                IZABERI USLUGU&nbsp;
                 <i className="fas fa-caret-down" />
               </button>
-              {dropDown && <DropDown />}
+              <li onClick={closeMobileMenu}>{dropDown && <DropDown />}</li>
             </li>
             <li className="nav-item">
               <NavLink
